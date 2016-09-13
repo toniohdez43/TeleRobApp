@@ -1,0 +1,6 @@
+framework module Pods_TeleRobAppTests {
+  umbrella header "Pods-TeleRobAppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

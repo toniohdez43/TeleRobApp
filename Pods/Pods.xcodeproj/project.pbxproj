@@ -1,0 +1,825 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06D9B6CD145AABB3374293D6D7EEEBFD /* Pods-TeleRobAppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 56F23BA2E62D2882B63E3948BF71FF42 /* Pods-TeleRobAppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		089B5325371B12334887E59B6B4168B5 /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99096DE2BFEA77B075F7FAAAEDCCF8CD /* SSLSecurity.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0B17DC3463B9150F7AAA09E8D0472525 /* Pods-TeleRobAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3CF855280778681E6D3475D32D93A6 /* Pods-TeleRobAppUITests-dummy.m */; };
+		134AD28B9D61F52DB903133E7A126173 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		38256B33DC17FA60B9130B014D7DBC69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		4FD9A0C2ECBF94836F8D099D38F07717 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F0ED5408096F7CF564991C1296C806 /* WebSocket.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6265805780B4E77C711E243A7BCA4906 /* Starscream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CDA7A388E564608E0E0604AA278356DD /* Starscream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9EDFEC4E499A95686BB2A703B35D4B05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		ACC1159663179BECA23BBAB65C0D45AD /* Pods-TeleRobApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1504A0B8FDC3E18E8CE943821D7CD96C /* Pods-TeleRobApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3D023A5764A384E4134E36764CEAFF6 /* Pods-TeleRobAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B4E24D0F5CB64E788C722C41F860A7 /* Pods-TeleRobAppTests-dummy.m */; };
+		CB6ABAFD01A96549F9A4BB1EAF117519 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		D98E6C4BAF5F5951A9B317803566C7F6 /* Pods-TeleRobAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C1729B1E4A8AB1D042DE68C28BC5EC3 /* Pods-TeleRobAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0EA005D596D7ED1AE5DF8161F2BB04C /* Starscream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B8967159B41F65D5A2C4E57DEFF5BB /* Starscream-dummy.m */; };
+		F2D768D788072192DD7F7CEE785551F2 /* Pods-TeleRobApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF498DE27F1A6A0E370E2069D44B59F /* Pods-TeleRobApp-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF41F83FD0F8D702CDA05971BD71C2D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37AA8CB9201D1D5CAC1EB9FF8EA25E6D;
+			remoteInfo = Starscream;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0824E9CA85785FA7ED8ADFB4CB4F9345 /* Pods-TeleRobAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TeleRobAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0CDD7F80F9D95977A7F69DD1D93BD147 /* Pods_TeleRobAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeleRobAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E9EFE7918ADAB4A4A57D9FEBA468029 /* Pods-TeleRobAppTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TeleRobAppTests-resources.sh"; sourceTree = "<group>"; };
+		1504A0B8FDC3E18E8CE943821D7CD96C /* Pods-TeleRobApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TeleRobApp-umbrella.h"; sourceTree = "<group>"; };
+		15A2EDD9D579D4150D5842947538E059 /* Pods-TeleRobAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TeleRobAppTests.modulemap"; sourceTree = "<group>"; };
+		15C5DB5EEF6ED194810915030A548576 /* Pods-TeleRobApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TeleRobApp.debug.xcconfig"; sourceTree = "<group>"; };
+		1C1729B1E4A8AB1D042DE68C28BC5EC3 /* Pods-TeleRobAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TeleRobAppTests-umbrella.h"; sourceTree = "<group>"; };
+		1FA87AFD44C65D7C442AC67C9A032783 /* Pods-TeleRobAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TeleRobAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2AE12DA85D3CFF39A8FE053923D61470 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FB2C7BFD46151DF097842715E30E3EB /* Pods-TeleRobApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TeleRobApp-resources.sh"; sourceTree = "<group>"; };
+		30EB87D223C7DB95359617AECA54310F /* Pods-TeleRobAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TeleRobAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		39170117784A7D348D49410E6CAB0C49 /* Pods-TeleRobAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TeleRobAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3A04803F17617C4ACEF5FCFCF21EC43B /* Pods-TeleRobAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TeleRobAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3EF498DE27F1A6A0E370E2069D44B59F /* Pods-TeleRobApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TeleRobApp-dummy.m"; sourceTree = "<group>"; };
+		3F3A4D58963E311ADCC22C1DD8EEB413 /* Pods_TeleRobApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeleRobApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44C1C105B5C590F61194D5076B5BDF31 /* Pods-TeleRobAppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TeleRobAppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		48F7CDF2B5396A449FA9E7AF18585EDB /* Starscream-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-prefix.pch"; sourceTree = "<group>"; };
+		4D6A78174609AF29D7736301CDB0CC2E /* Pods-TeleRobAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TeleRobAppUITests.modulemap"; sourceTree = "<group>"; };
+		4D7E626D8EBFF0AD5A998B44A1F02B1A /* Pods-TeleRobAppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TeleRobAppUITests-frameworks.sh"; sourceTree = "<group>"; };
+		50D1E65FAC3AD6926B4BCD701F3F7CD5 /* Pods-TeleRobAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TeleRobAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		55B4E24D0F5CB64E788C722C41F860A7 /* Pods-TeleRobAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TeleRobAppTests-dummy.m"; sourceTree = "<group>"; };
+		56F23BA2E62D2882B63E3948BF71FF42 /* Pods-TeleRobAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TeleRobAppUITests-umbrella.h"; sourceTree = "<group>"; };
+		58555CF0001B7F83FAF76E62BD65D1F1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58764F9299D2B6842DFF118383EA2A02 /* Pods-TeleRobAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TeleRobAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		6E1DA55FB12FA3D147EEF002443B2CBA /* Pods-TeleRobApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TeleRobApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		71262C6BBF6E641B30BF1C5213698367 /* Pods-TeleRobAppTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TeleRobAppTests-frameworks.sh"; sourceTree = "<group>"; };
+		74037EF66FDC9F98CBB1F8DD83088C7A /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79DB4F44A37A114C25EB5058B036A59E /* Pods-TeleRobAppUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TeleRobAppUITests-resources.sh"; sourceTree = "<group>"; };
+		82B8967159B41F65D5A2C4E57DEFF5BB /* Starscream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Starscream-dummy.m"; sourceTree = "<group>"; };
+		8DE600417F64AF939DD6E1C5942D9AE3 /* Pods-TeleRobApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TeleRobApp.release.xcconfig"; sourceTree = "<group>"; };
+		902507A96FEE30E3658AEAE83DD7BCA9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		99096DE2BFEA77B075F7FAAAEDCCF8CD /* SSLSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLSecurity.swift; path = Source/SSLSecurity.swift; sourceTree = "<group>"; };
+		9971BD403A3CB68D3C54A8F9A70997EE /* Pods-TeleRobApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TeleRobApp-frameworks.sh"; sourceTree = "<group>"; };
+		9975765FF8E0053AB94C0ED6B3AE06FF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F3CF855280778681E6D3475D32D93A6 /* Pods-TeleRobAppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TeleRobAppUITests-dummy.m"; sourceTree = "<group>"; };
+		A4F0ED5408096F7CF564991C1296C806 /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Source/WebSocket.swift; sourceTree = "<group>"; };
+		B0332E59BA6783E677789162369F6F29 /* Pods-TeleRobApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TeleRobApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		CDA7A388E564608E0E0604AA278356DD /* Starscream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-umbrella.h"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E01F69ECB170070E118321B6823F0B3B /* Starscream.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Starscream.modulemap; sourceTree = "<group>"; };
+		E220BF9EB5B04E9627A0B2A33E2A7BD0 /* Pods-TeleRobApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TeleRobApp.modulemap"; sourceTree = "<group>"; };
+		F31F409E4E95BCA863B9F4167054FC0F /* Pods_TeleRobAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeleRobAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4833866964687753A0EF73B07676A3E /* Starscream.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43682FD12713A504DC262B4E88809BFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				134AD28B9D61F52DB903133E7A126173 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78E47E9B6D0C51363316E7BD6787466A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38256B33DC17FA60B9130B014D7DBC69 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		914FC5F30B0FB613915FA349556A4F8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB6ABAFD01A96549F9A4BB1EAF117519 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6515BAEB4775BFB920E083DF87C3087 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EDFEC4E499A95686BB2A703B35D4B05 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1010A70BFFFCC5E48DDA7A3D3BA5977B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				902507A96FEE30E3658AEAE83DD7BCA9 /* Info.plist */,
+				E01F69ECB170070E118321B6823F0B3B /* Starscream.modulemap */,
+				F4833866964687753A0EF73B07676A3E /* Starscream.xcconfig */,
+				82B8967159B41F65D5A2C4E57DEFF5BB /* Starscream-dummy.m */,
+				48F7CDF2B5396A449FA9E7AF18585EDB /* Starscream-prefix.pch */,
+				CDA7A388E564608E0E0604AA278356DD /* Starscream-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Starscream";
+			sourceTree = "<group>";
+		};
+		157FD86A77DCA2A31E2236AFCD438E01 /* Pods-TeleRobAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2AE12DA85D3CFF39A8FE053923D61470 /* Info.plist */,
+				4D6A78174609AF29D7736301CDB0CC2E /* Pods-TeleRobAppUITests.modulemap */,
+				44C1C105B5C590F61194D5076B5BDF31 /* Pods-TeleRobAppUITests-acknowledgements.markdown */,
+				0824E9CA85785FA7ED8ADFB4CB4F9345 /* Pods-TeleRobAppUITests-acknowledgements.plist */,
+				9F3CF855280778681E6D3475D32D93A6 /* Pods-TeleRobAppUITests-dummy.m */,
+				4D7E626D8EBFF0AD5A998B44A1F02B1A /* Pods-TeleRobAppUITests-frameworks.sh */,
+				79DB4F44A37A114C25EB5058B036A59E /* Pods-TeleRobAppUITests-resources.sh */,
+				56F23BA2E62D2882B63E3948BF71FF42 /* Pods-TeleRobAppUITests-umbrella.h */,
+				50D1E65FAC3AD6926B4BCD701F3F7CD5 /* Pods-TeleRobAppUITests.debug.xcconfig */,
+				39170117784A7D348D49410E6CAB0C49 /* Pods-TeleRobAppUITests.release.xcconfig */,
+			);
+			name = "Pods-TeleRobAppUITests";
+			path = "Target Support Files/Pods-TeleRobAppUITests";
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4A8D62BE2BA22DC48106FF8BE88B1BAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F3A4D58963E311ADCC22C1DD8EEB413 /* Pods_TeleRobApp.framework */,
+				F31F409E4E95BCA863B9F4167054FC0F /* Pods_TeleRobAppTests.framework */,
+				0CDD7F80F9D95977A7F69DD1D93BD147 /* Pods_TeleRobAppUITests.framework */,
+				74037EF66FDC9F98CBB1F8DD83088C7A /* Starscream.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		67947CE1D62E1F1FA33846A67EBD4CEC /* Pods-TeleRobApp */ = {
+			isa = PBXGroup;
+			children = (
+				58555CF0001B7F83FAF76E62BD65D1F1 /* Info.plist */,
+				E220BF9EB5B04E9627A0B2A33E2A7BD0 /* Pods-TeleRobApp.modulemap */,
+				6E1DA55FB12FA3D147EEF002443B2CBA /* Pods-TeleRobApp-acknowledgements.markdown */,
+				B0332E59BA6783E677789162369F6F29 /* Pods-TeleRobApp-acknowledgements.plist */,
+				3EF498DE27F1A6A0E370E2069D44B59F /* Pods-TeleRobApp-dummy.m */,
+				9971BD403A3CB68D3C54A8F9A70997EE /* Pods-TeleRobApp-frameworks.sh */,
+				2FB2C7BFD46151DF097842715E30E3EB /* Pods-TeleRobApp-resources.sh */,
+				1504A0B8FDC3E18E8CE943821D7CD96C /* Pods-TeleRobApp-umbrella.h */,
+				15C5DB5EEF6ED194810915030A548576 /* Pods-TeleRobApp.debug.xcconfig */,
+				8DE600417F64AF939DD6E1C5942D9AE3 /* Pods-TeleRobApp.release.xcconfig */,
+			);
+			name = "Pods-TeleRobApp";
+			path = "Target Support Files/Pods-TeleRobApp";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				BB73C13E6777F550D73CA03B0373E32B /* Pods */,
+				4A8D62BE2BA22DC48106FF8BE88B1BAC /* Products */,
+				7E8FAB96D22EA3FE32EFBA057683B2B2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7E8FAB96D22EA3FE32EFBA057683B2B2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				67947CE1D62E1F1FA33846A67EBD4CEC /* Pods-TeleRobApp */,
+				9FD39E8D3C8500D4E82F02BC5B127463 /* Pods-TeleRobAppTests */,
+				157FD86A77DCA2A31E2236AFCD438E01 /* Pods-TeleRobAppUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9FD39E8D3C8500D4E82F02BC5B127463 /* Pods-TeleRobAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				9975765FF8E0053AB94C0ED6B3AE06FF /* Info.plist */,
+				15A2EDD9D579D4150D5842947538E059 /* Pods-TeleRobAppTests.modulemap */,
+				30EB87D223C7DB95359617AECA54310F /* Pods-TeleRobAppTests-acknowledgements.markdown */,
+				1FA87AFD44C65D7C442AC67C9A032783 /* Pods-TeleRobAppTests-acknowledgements.plist */,
+				55B4E24D0F5CB64E788C722C41F860A7 /* Pods-TeleRobAppTests-dummy.m */,
+				71262C6BBF6E641B30BF1C5213698367 /* Pods-TeleRobAppTests-frameworks.sh */,
+				0E9EFE7918ADAB4A4A57D9FEBA468029 /* Pods-TeleRobAppTests-resources.sh */,
+				1C1729B1E4A8AB1D042DE68C28BC5EC3 /* Pods-TeleRobAppTests-umbrella.h */,
+				3A04803F17617C4ACEF5FCFCF21EC43B /* Pods-TeleRobAppTests.debug.xcconfig */,
+				58764F9299D2B6842DFF118383EA2A02 /* Pods-TeleRobAppTests.release.xcconfig */,
+			);
+			name = "Pods-TeleRobAppTests";
+			path = "Target Support Files/Pods-TeleRobAppTests";
+			sourceTree = "<group>";
+		};
+		BB73C13E6777F550D73CA03B0373E32B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C2857A1C48D4AA2872EA99006508E519 /* Starscream */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2857A1C48D4AA2872EA99006508E519 /* Starscream */ = {
+			isa = PBXGroup;
+			children = (
+				99096DE2BFEA77B075F7FAAAEDCCF8CD /* SSLSecurity.swift */,
+				A4F0ED5408096F7CF564991C1296C806 /* WebSocket.swift */,
+				1010A70BFFFCC5E48DDA7A3D3BA5977B /* Support Files */,
+			);
+			path = Starscream;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1D73E53CCA7CE132F75193793FB592C4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6265805780B4E77C711E243A7BCA4906 /* Starscream-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F370921FEAC7C4ACF11D2617DD1EFDA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98E6C4BAF5F5951A9B317803566C7F6 /* Pods-TeleRobAppTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26823599E7DA55B112D41388202D35BF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06D9B6CD145AABB3374293D6D7EEEBFD /* Pods-TeleRobAppUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D1E77F3EC79F1AB092FCBE32DC1D22C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACC1159663179BECA23BBAB65C0D45AD /* Pods-TeleRobApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		25F48D0CA5C6F712CA8CE97D48BC1B42 /* Pods-TeleRobApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54F6EA8DC4E0347E1602F24AD8FE87CD /* Build configuration list for PBXNativeTarget "Pods-TeleRobApp" */;
+			buildPhases = (
+				06E5ACC85323DA2CB7083ED6EFAD54AA /* Sources */,
+				78E47E9B6D0C51363316E7BD6787466A /* Frameworks */,
+				7D1E77F3EC79F1AB092FCBE32DC1D22C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				879FEEE953B70E64CE4185FF83F3DC3D /* PBXTargetDependency */,
+			);
+			name = "Pods-TeleRobApp";
+			productName = "Pods-TeleRobApp";
+			productReference = 3F3A4D58963E311ADCC22C1DD8EEB413 /* Pods_TeleRobApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		37AA8CB9201D1D5CAC1EB9FF8EA25E6D /* Starscream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74D8A6C49152DB2DEAABFEBC2DD00885 /* Build configuration list for PBXNativeTarget "Starscream" */;
+			buildPhases = (
+				C4818BE9BAEC109FBF40634A6CF89FF2 /* Sources */,
+				B6515BAEB4775BFB920E083DF87C3087 /* Frameworks */,
+				1D73E53CCA7CE132F75193793FB592C4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Starscream;
+			productName = Starscream;
+			productReference = 74037EF66FDC9F98CBB1F8DD83088C7A /* Starscream.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		84870E8B3EEBCDA4345875C648F1AE47 /* Pods-TeleRobAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DF731BD985E599D6D443B011CE65CDC /* Build configuration list for PBXNativeTarget "Pods-TeleRobAppUITests" */;
+			buildPhases = (
+				EE93653ADC64145FA8BA9A02AA62B852 /* Sources */,
+				43682FD12713A504DC262B4E88809BFB /* Frameworks */,
+				26823599E7DA55B112D41388202D35BF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TeleRobAppUITests";
+			productName = "Pods-TeleRobAppUITests";
+			productReference = 0CDD7F80F9D95977A7F69DD1D93BD147 /* Pods_TeleRobAppUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F7B9DE4CB27218E4E428118CDE68B79E /* Pods-TeleRobAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50CA4B19C3C9CE7136F33F96BFD81952 /* Build configuration list for PBXNativeTarget "Pods-TeleRobAppTests" */;
+			buildPhases = (
+				CD9C1A8EF7316E7A8B39A4A9B006089A /* Sources */,
+				914FC5F30B0FB613915FA349556A4F8A /* Frameworks */,
+				1F370921FEAC7C4ACF11D2617DD1EFDA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TeleRobAppTests";
+			productName = "Pods-TeleRobAppTests";
+			productReference = F31F409E4E95BCA863B9F4167054FC0F /* Pods_TeleRobAppTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 4A8D62BE2BA22DC48106FF8BE88B1BAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				25F48D0CA5C6F712CA8CE97D48BC1B42 /* Pods-TeleRobApp */,
+				F7B9DE4CB27218E4E428118CDE68B79E /* Pods-TeleRobAppTests */,
+				84870E8B3EEBCDA4345875C648F1AE47 /* Pods-TeleRobAppUITests */,
+				37AA8CB9201D1D5CAC1EB9FF8EA25E6D /* Starscream */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06E5ACC85323DA2CB7083ED6EFAD54AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2D768D788072192DD7F7CEE785551F2 /* Pods-TeleRobApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4818BE9BAEC109FBF40634A6CF89FF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				089B5325371B12334887E59B6B4168B5 /* SSLSecurity.swift in Sources */,
+				E0EA005D596D7ED1AE5DF8161F2BB04C /* Starscream-dummy.m in Sources */,
+				4FD9A0C2ECBF94836F8D099D38F07717 /* WebSocket.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD9C1A8EF7316E7A8B39A4A9B006089A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3D023A5764A384E4134E36764CEAFF6 /* Pods-TeleRobAppTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE93653ADC64145FA8BA9A02AA62B852 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B17DC3463B9150F7AAA09E8D0472525 /* Pods-TeleRobAppUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		879FEEE953B70E64CE4185FF83F3DC3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			target = 37AA8CB9201D1D5CAC1EB9FF8EA25E6D /* Starscream */;
+			targetProxy = CF41F83FD0F8D702CDA05971BD71C2D0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		21A5BB905C2165CB59376A309E2907D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4833866964687753A0EF73B07676A3E /* Starscream.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54F8077319F1416731BAB52113734027 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58764F9299D2B6842DFF118383EA2A02 /* Pods-TeleRobAppTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TeleRobAppTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TeleRobAppTests/Pods-TeleRobAppTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TeleRobAppTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		7B2F06FE7BC4B413E303E1CBED309275 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DE600417F64AF939DD6E1C5942D9AE3 /* Pods-TeleRobApp.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TeleRobApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TeleRobApp/Pods-TeleRobApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TeleRobApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A7C29BF91A6DF9A26619D0A489D78D70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4833866964687753A0EF73B07676A3E /* Starscream.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C209DAED5FBE086105781A915A028935 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50D1E65FAC3AD6926B4BCD701F3F7CD5 /* Pods-TeleRobAppUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TeleRobAppUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TeleRobAppUITests/Pods-TeleRobAppUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TeleRobAppUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CA0F3317D42B1F87E3620F187E3B5753 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A04803F17617C4ACEF5FCFCF21EC43B /* Pods-TeleRobAppTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TeleRobAppTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TeleRobAppTests/Pods-TeleRobAppTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TeleRobAppTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F342D2252C2BDC9D5EA2B6DA3F79E783 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39170117784A7D348D49410E6CAB0C49 /* Pods-TeleRobAppUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TeleRobAppUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TeleRobAppUITests/Pods-TeleRobAppUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TeleRobAppUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F423FC1D2C795E3496B0DDD77EE88D3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15C5DB5EEF6ED194810915030A548576 /* Pods-TeleRobApp.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TeleRobApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TeleRobApp/Pods-TeleRobApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TeleRobApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */,
+				3FA451D268613890FA8A5A03801E11D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DF731BD985E599D6D443B011CE65CDC /* Build configuration list for PBXNativeTarget "Pods-TeleRobAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C209DAED5FBE086105781A915A028935 /* Debug */,
+				F342D2252C2BDC9D5EA2B6DA3F79E783 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50CA4B19C3C9CE7136F33F96BFD81952 /* Build configuration list for PBXNativeTarget "Pods-TeleRobAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA0F3317D42B1F87E3620F187E3B5753 /* Debug */,
+				54F8077319F1416731BAB52113734027 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54F6EA8DC4E0347E1602F24AD8FE87CD /* Build configuration list for PBXNativeTarget "Pods-TeleRobApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F423FC1D2C795E3496B0DDD77EE88D3A /* Debug */,
+				7B2F06FE7BC4B413E303E1CBED309275 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74D8A6C49152DB2DEAABFEBC2DD00885 /* Build configuration list for PBXNativeTarget "Starscream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7C29BF91A6DF9A26619D0A489D78D70 /* Debug */,
+				21A5BB905C2165CB59376A309E2907D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
