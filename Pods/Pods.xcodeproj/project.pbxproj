@@ -8,18 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		06D9B6CD145AABB3374293D6D7EEEBFD /* Pods-TeleRobAppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 56F23BA2E62D2882B63E3948BF71FF42 /* Pods-TeleRobAppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		089B5325371B12334887E59B6B4168B5 /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99096DE2BFEA77B075F7FAAAEDCCF8CD /* SSLSecurity.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		089B5325371B12334887E59B6B4168B5 /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671202A46D61D333CE923A6801A01F99 /* SSLSecurity.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0B17DC3463B9150F7AAA09E8D0472525 /* Pods-TeleRobAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3CF855280778681E6D3475D32D93A6 /* Pods-TeleRobAppUITests-dummy.m */; };
 		134AD28B9D61F52DB903133E7A126173 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		38256B33DC17FA60B9130B014D7DBC69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		4FD9A0C2ECBF94836F8D099D38F07717 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F0ED5408096F7CF564991C1296C806 /* WebSocket.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		6265805780B4E77C711E243A7BCA4906 /* Starscream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CDA7A388E564608E0E0604AA278356DD /* Starscream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FD9A0C2ECBF94836F8D099D38F07717 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3112932C01C65BDA14945B70978A08 /* WebSocket.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6265805780B4E77C711E243A7BCA4906 /* Starscream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 92321005911810D22DF4E317B7EA35C6 /* Starscream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9EDFEC4E499A95686BB2A703B35D4B05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		ACC1159663179BECA23BBAB65C0D45AD /* Pods-TeleRobApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1504A0B8FDC3E18E8CE943821D7CD96C /* Pods-TeleRobApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B3D023A5764A384E4134E36764CEAFF6 /* Pods-TeleRobAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B4E24D0F5CB64E788C722C41F860A7 /* Pods-TeleRobAppTests-dummy.m */; };
 		CB6ABAFD01A96549F9A4BB1EAF117519 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		D98E6C4BAF5F5951A9B317803566C7F6 /* Pods-TeleRobAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C1729B1E4A8AB1D042DE68C28BC5EC3 /* Pods-TeleRobAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E0EA005D596D7ED1AE5DF8161F2BB04C /* Starscream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B8967159B41F65D5A2C4E57DEFF5BB /* Starscream-dummy.m */; };
+		E0EA005D596D7ED1AE5DF8161F2BB04C /* Starscream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5776A7825735CC11D06AFBFA34C61C /* Starscream-dummy.m */; };
 		F2D768D788072192DD7F7CEE785551F2 /* Pods-TeleRobApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF498DE27F1A6A0E370E2069D44B59F /* Pods-TeleRobApp-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		0824E9CA85785FA7ED8ADFB4CB4F9345 /* Pods-TeleRobAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TeleRobAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		09A8C871D5D735F5609D33B1A7947069 /* GoogleKitDialogs.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleKitDialogs.bundle; path = Resources/GoogleKitDialogs.bundle; sourceTree = "<group>"; };
 		0CDD7F80F9D95977A7F69DD1D93BD147 /* Pods_TeleRobAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeleRobAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E9EFE7918ADAB4A4A57D9FEBA468029 /* Pods-TeleRobAppTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TeleRobAppTests-resources.sh"; sourceTree = "<group>"; };
 		1504A0B8FDC3E18E8CE943821D7CD96C /* Pods-TeleRobApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TeleRobApp-umbrella.h"; sourceTree = "<group>"; };
@@ -42,42 +43,61 @@
 		15C5DB5EEF6ED194810915030A548576 /* Pods-TeleRobApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TeleRobApp.debug.xcconfig"; sourceTree = "<group>"; };
 		1C1729B1E4A8AB1D042DE68C28BC5EC3 /* Pods-TeleRobAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TeleRobAppTests-umbrella.h"; sourceTree = "<group>"; };
 		1FA87AFD44C65D7C442AC67C9A032783 /* Pods-TeleRobAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TeleRobAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		205B9DFBA576289ADA00164448A06345 /* GoogleKitHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleKitHUD.bundle; path = Resources/GoogleKitHUD.bundle; sourceTree = "<group>"; };
+		24FAF1526AC7574CCC560BA0D325F220 /* GVRAudioEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GVRAudioEngine.h; path = Sources/GVRAudioEngine.h; sourceTree = "<group>"; };
 		2AE12DA85D3CFF39A8FE053923D61470 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C1B630E14D3A4355BD8281628EE476A /* GVROverlayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GVROverlayView.h; path = Sources/GVROverlayView.h; sourceTree = "<group>"; };
 		2FB2C7BFD46151DF097842715E30E3EB /* Pods-TeleRobApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TeleRobApp-resources.sh"; sourceTree = "<group>"; };
 		30EB87D223C7DB95359617AECA54310F /* Pods-TeleRobAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TeleRobAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3537CD72560CEEF5512F845600F98034 /* gvr_audio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = gvr_audio.h; path = Sources/vr/gvr/capi/include/gvr_audio.h; sourceTree = "<group>"; };
+		38FE9DFA5C936C8A2D42117B89F16D3E /* Starscream.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Starscream.modulemap; sourceTree = "<group>"; };
 		39170117784A7D348D49410E6CAB0C49 /* Pods-TeleRobAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TeleRobAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3A04803F17617C4ACEF5FCFCF21EC43B /* Pods-TeleRobAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TeleRobAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3EF498DE27F1A6A0E370E2069D44B59F /* Pods-TeleRobApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TeleRobApp-dummy.m"; sourceTree = "<group>"; };
 		3F3A4D58963E311ADCC22C1DD8EEB413 /* Pods_TeleRobApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeleRobApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4292C1621E7611E51721A9F4CFAA27AD /* GVRHeadTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GVRHeadTransform.h; path = Sources/GVRHeadTransform.h; sourceTree = "<group>"; };
 		44C1C105B5C590F61194D5076B5BDF31 /* Pods-TeleRobAppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TeleRobAppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		48F7CDF2B5396A449FA9E7AF18585EDB /* Starscream-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-prefix.pch"; sourceTree = "<group>"; };
 		4D6A78174609AF29D7736301CDB0CC2E /* Pods-TeleRobAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TeleRobAppUITests.modulemap"; sourceTree = "<group>"; };
 		4D7E626D8EBFF0AD5A998B44A1F02B1A /* Pods-TeleRobAppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TeleRobAppUITests-frameworks.sh"; sourceTree = "<group>"; };
+		4F74DB833461E3D11941D645927C873E /* GVRWidgetView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GVRWidgetView.h; path = Sources/GVRWidgetView.h; sourceTree = "<group>"; };
+		506FB5FA8504EB36367D096CF13D3D57 /* GoogleKitCore.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleKitCore.bundle; path = Resources/GoogleKitCore.bundle; sourceTree = "<group>"; };
 		50D1E65FAC3AD6926B4BCD701F3F7CD5 /* Pods-TeleRobAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TeleRobAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		51C35870C134DCFDB65AEBD8FE3AE4DD /* gvr_version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = gvr_version.h; path = Sources/vr/gvr/capi/include/gvr_version.h; sourceTree = "<group>"; };
+		525630BFEECC4AE0B26967670A3038FE /* GVRPanoramaView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GVRPanoramaView.h; path = Sources/GVRPanoramaView.h; sourceTree = "<group>"; };
 		55B4E24D0F5CB64E788C722C41F860A7 /* Pods-TeleRobAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TeleRobAppTests-dummy.m"; sourceTree = "<group>"; };
 		56F23BA2E62D2882B63E3948BF71FF42 /* Pods-TeleRobAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TeleRobAppUITests-umbrella.h"; sourceTree = "<group>"; };
 		58555CF0001B7F83FAF76E62BD65D1F1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58764F9299D2B6842DFF118383EA2A02 /* Pods-TeleRobAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TeleRobAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		5A66D810F732B50F3FA0EF5591344366 /* libCardboardSDK_i386.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCardboardSDK_i386.a; path = Libraries/libCardboardSDK_i386.a; sourceTree = "<group>"; };
+		608E14CA4BE01DE3BD48DF5CAFB9CD1B /* GVRVideoView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GVRVideoView.h; path = Sources/GVRVideoView.h; sourceTree = "<group>"; };
+		66F5E757DF14D8371129E6712C9F32E3 /* MaterialRobotoFontLoader.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = MaterialRobotoFontLoader.bundle; path = Resources/MaterialRobotoFontLoader.bundle; sourceTree = "<group>"; };
+		671202A46D61D333CE923A6801A01F99 /* SSLSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLSecurity.swift; path = Source/SSLSecurity.swift; sourceTree = "<group>"; };
+		6D315A16B0D3FAE344E904B2C00BB93F /* GVRCardboardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GVRCardboardView.h; path = Sources/GVRCardboardView.h; sourceTree = "<group>"; };
 		6E1DA55FB12FA3D147EEF002443B2CBA /* Pods-TeleRobApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TeleRobApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		70AD84E2EA446372AD59975BA6CE7293 /* CardboardSDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = CardboardSDK.bundle; path = Resources/CardboardSDK.bundle; sourceTree = "<group>"; };
 		71262C6BBF6E641B30BF1C5213698367 /* Pods-TeleRobAppTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TeleRobAppTests-frameworks.sh"; sourceTree = "<group>"; };
+		7227F326B9342F74AC6B6410EC2B1BB4 /* Starscream.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.xcconfig; sourceTree = "<group>"; };
 		74037EF66FDC9F98CBB1F8DD83088C7A /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79DB4F44A37A114C25EB5058B036A59E /* Pods-TeleRobAppUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TeleRobAppUITests-resources.sh"; sourceTree = "<group>"; };
-		82B8967159B41F65D5A2C4E57DEFF5BB /* Starscream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Starscream-dummy.m"; sourceTree = "<group>"; };
+		8C4C7EF68D4C767997EAD99DBEFF6280 /* gvr_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = gvr_types.h; path = Sources/vr/gvr/capi/include/gvr_types.h; sourceTree = "<group>"; };
 		8DE600417F64AF939DD6E1C5942D9AE3 /* Pods-TeleRobApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TeleRobApp.release.xcconfig"; sourceTree = "<group>"; };
-		902507A96FEE30E3658AEAE83DD7BCA9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92321005911810D22DF4E317B7EA35C6 /* Starscream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		99096DE2BFEA77B075F7FAAAEDCCF8CD /* SSLSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLSecurity.swift; path = Source/SSLSecurity.swift; sourceTree = "<group>"; };
 		9971BD403A3CB68D3C54A8F9A70997EE /* Pods-TeleRobApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TeleRobApp-frameworks.sh"; sourceTree = "<group>"; };
 		9975765FF8E0053AB94C0ED6B3AE06FF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D6CCC18525666841C886F5374B5F28D /* gvr.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = gvr.h; path = Sources/vr/gvr/capi/include/gvr.h; sourceTree = "<group>"; };
 		9F3CF855280778681E6D3475D32D93A6 /* Pods-TeleRobAppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TeleRobAppUITests-dummy.m"; sourceTree = "<group>"; };
-		A4F0ED5408096F7CF564991C1296C806 /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Source/WebSocket.swift; sourceTree = "<group>"; };
+		AA5776A7825735CC11D06AFBFA34C61C /* Starscream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Starscream-dummy.m"; sourceTree = "<group>"; };
 		B0332E59BA6783E677789162369F6F29 /* Pods-TeleRobApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TeleRobApp-acknowledgements.plist"; sourceTree = "<group>"; };
-		CDA7A388E564608E0E0604AA278356DD /* Starscream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-umbrella.h"; sourceTree = "<group>"; };
+		CABD14BA528DCACF87027BAA0C504279 /* libCardboardSDK_arm64.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCardboardSDK_arm64.a; path = Libraries/libCardboardSDK_arm64.a; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		E01F69ECB170070E118321B6823F0B3B /* Starscream.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Starscream.modulemap; sourceTree = "<group>"; };
+		DAC84C9F662BF676F5224750D779AD78 /* libCardboardSDK_x86_64.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCardboardSDK_x86_64.a; path = Libraries/libCardboardSDK_x86_64.a; sourceTree = "<group>"; };
+		DD3112932C01C65BDA14945B70978A08 /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Source/WebSocket.swift; sourceTree = "<group>"; };
 		E220BF9EB5B04E9627A0B2A33E2A7BD0 /* Pods-TeleRobApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TeleRobApp.modulemap"; sourceTree = "<group>"; };
+		E72C5543259EE904C0849AAFF2FF6D98 /* Starscream-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-prefix.pch"; sourceTree = "<group>"; };
+		E7EDADD97FDBBCBF5E547E8F009A8F6E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA03E88D193BA8D87088A8A4377077B3 /* libCardboardSDK_armv7.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCardboardSDK_armv7.a; path = Libraries/libCardboardSDK_armv7.a; sourceTree = "<group>"; };
 		F31F409E4E95BCA863B9F4167054FC0F /* Pods_TeleRobAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeleRobAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4833866964687753A0EF73B07676A3E /* Starscream.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,20 +136,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1010A70BFFFCC5E48DDA7A3D3BA5977B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				902507A96FEE30E3658AEAE83DD7BCA9 /* Info.plist */,
-				E01F69ECB170070E118321B6823F0B3B /* Starscream.modulemap */,
-				F4833866964687753A0EF73B07676A3E /* Starscream.xcconfig */,
-				82B8967159B41F65D5A2C4E57DEFF5BB /* Starscream-dummy.m */,
-				48F7CDF2B5396A449FA9E7AF18585EDB /* Starscream-prefix.pch */,
-				CDA7A388E564608E0E0604AA278356DD /* Starscream-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Starscream";
-			sourceTree = "<group>";
-		};
 		157FD86A77DCA2A31E2236AFCD438E01 /* Pods-TeleRobAppUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +152,29 @@
 			);
 			name = "Pods-TeleRobAppUITests";
 			path = "Target Support Files/Pods-TeleRobAppUITests";
+			sourceTree = "<group>";
+		};
+		1692C649FE8478BB1BCCD4935F2238ED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				70AD84E2EA446372AD59975BA6CE7293 /* CardboardSDK.bundle */,
+				506FB5FA8504EB36367D096CF13D3D57 /* GoogleKitCore.bundle */,
+				09A8C871D5D735F5609D33B1A7947069 /* GoogleKitDialogs.bundle */,
+				205B9DFBA576289ADA00164448A06345 /* GoogleKitHUD.bundle */,
+				66F5E757DF14D8371129E6712C9F32E3 /* MaterialRobotoFontLoader.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2825AAEE6DB240B57CB7ACAC92A9EE9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CABD14BA528DCACF87027BAA0C504279 /* libCardboardSDK_arm64.a */,
+				EA03E88D193BA8D87088A8A4377077B3 /* libCardboardSDK_armv7.a */,
+				5A66D810F732B50F3FA0EF5591344366 /* libCardboardSDK_i386.a */,
+				DAC84C9F662BF676F5224750D779AD78 /* libCardboardSDK_x86_64.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
@@ -165,6 +194,26 @@
 				74037EF66FDC9F98CBB1F8DD83088C7A /* Starscream.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4F3F71DE7EA33115107A83CBE0AA2998 /* GVRSDK */ = {
+			isa = PBXGroup;
+			children = (
+				9D6CCC18525666841C886F5374B5F28D /* gvr.h */,
+				3537CD72560CEEF5512F845600F98034 /* gvr_audio.h */,
+				8C4C7EF68D4C767997EAD99DBEFF6280 /* gvr_types.h */,
+				51C35870C134DCFDB65AEBD8FE3AE4DD /* gvr_version.h */,
+				24FAF1526AC7574CCC560BA0D325F220 /* GVRAudioEngine.h */,
+				6D315A16B0D3FAE344E904B2C00BB93F /* GVRCardboardView.h */,
+				4292C1621E7611E51721A9F4CFAA27AD /* GVRHeadTransform.h */,
+				2C1B630E14D3A4355BD8281628EE476A /* GVROverlayView.h */,
+				525630BFEECC4AE0B26967670A3038FE /* GVRPanoramaView.h */,
+				608E14CA4BE01DE3BD48DF5CAFB9CD1B /* GVRVideoView.h */,
+				4F74DB833461E3D11941D645927C873E /* GVRWidgetView.h */,
+				2825AAEE6DB240B57CB7ACAC92A9EE9D /* Frameworks */,
+				1692C649FE8478BB1BCCD4935F2238ED /* Resources */,
+			);
+			path = GVRSDK;
 			sourceTree = "<group>";
 		};
 		67947CE1D62E1F1FA33846A67EBD4CEC /* Pods-TeleRobApp */ = {
@@ -190,7 +239,7 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				BB73C13E6777F550D73CA03B0373E32B /* Pods */,
+				E17FD106E0DA65ED017304F42BD091FA /* Pods */,
 				4A8D62BE2BA22DC48106FF8BE88B1BAC /* Products */,
 				7E8FAB96D22EA3FE32EFBA057683B2B2 /* Targets Support Files */,
 			);
@@ -224,12 +273,14 @@
 			path = "Target Support Files/Pods-TeleRobAppTests";
 			sourceTree = "<group>";
 		};
-		BB73C13E6777F550D73CA03B0373E32B /* Pods */ = {
+		B80B5549DCA7AF63F48E4ABB454E9EE2 /* Starscream */ = {
 			isa = PBXGroup;
 			children = (
-				C2857A1C48D4AA2872EA99006508E519 /* Starscream */,
+				671202A46D61D333CE923A6801A01F99 /* SSLSecurity.swift */,
+				DD3112932C01C65BDA14945B70978A08 /* WebSocket.swift */,
+				BF2462CCD330E98A3DBA190E846B2E4F /* Support Files */,
 			);
-			name = Pods;
+			path = Starscream;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -240,14 +291,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C2857A1C48D4AA2872EA99006508E519 /* Starscream */ = {
+		BF2462CCD330E98A3DBA190E846B2E4F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				99096DE2BFEA77B075F7FAAAEDCCF8CD /* SSLSecurity.swift */,
-				A4F0ED5408096F7CF564991C1296C806 /* WebSocket.swift */,
-				1010A70BFFFCC5E48DDA7A3D3BA5977B /* Support Files */,
+				E7EDADD97FDBBCBF5E547E8F009A8F6E /* Info.plist */,
+				38FE9DFA5C936C8A2D42117B89F16D3E /* Starscream.modulemap */,
+				7227F326B9342F74AC6B6410EC2B1BB4 /* Starscream.xcconfig */,
+				AA5776A7825735CC11D06AFBFA34C61C /* Starscream-dummy.m */,
+				E72C5543259EE904C0849AAFF2FF6D98 /* Starscream-prefix.pch */,
+				92321005911810D22DF4E317B7EA35C6 /* Starscream-umbrella.h */,
 			);
-			path = Starscream;
+			name = "Support Files";
+			path = "../Target Support Files/Starscream";
+			sourceTree = "<group>";
+		};
+		E17FD106E0DA65ED017304F42BD091FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F3F71DE7EA33115107A83CBE0AA2998 /* GVRSDK */,
+				B80B5549DCA7AF63F48E4ABB454E9EE2 /* Starscream */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,6 +429,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					37AA8CB9201D1D5CAC1EB9FF8EA25E6D = {
+						DevelopmentTeam = H9SZPBU2NR;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -435,12 +504,13 @@
 /* Begin XCBuildConfiguration section */
 		21A5BB905C2165CB59376A309E2907D7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4833866964687753A0EF73B07676A3E /* Starscream.xcconfig */;
+			baseConfigurationReference = 7227F326B9342F74AC6B6410EC2B1BB4 /* Starscream.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = H9SZPBU2NR;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -456,6 +526,7 @@
 				PRODUCT_NAME = Starscream;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -610,12 +681,13 @@
 		};
 		A7C29BF91A6DF9A26619D0A489D78D70 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4833866964687753A0EF73B07676A3E /* Starscream.xcconfig */;
+			baseConfigurationReference = 7227F326B9342F74AC6B6410EC2B1BB4 /* Starscream.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = H9SZPBU2NR;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -632,6 +704,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

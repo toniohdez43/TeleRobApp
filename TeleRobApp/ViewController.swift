@@ -5,7 +5,7 @@
 //  Created by Antonio  Hernandez  on 9/6/16.
 //  Copyright © 2016 Antonio  Hernandez . All rights reserved.
 //
-
+/*
 import UIKit
 import Starscream
 
@@ -14,7 +14,7 @@ class ViewController: UIViewController{
     var socket: WebSocket!
     override func viewDidLoad() {
         super.viewDidLoad()
-        socket = WebSocket(url: NSURL(string: "ws://10.33.10.18:8000/websocket")!)
+        socket = WebSocket(url: URL(string: "ws://10.33.10.18:8000/websocket")!)
         socket.delegate = self
         socket.connect()
         //connManager = ConnectionManager(ip:"10.33.10.18",port: "8000")
@@ -32,23 +32,23 @@ class ViewController: UIViewController{
 
     
     @IBOutlet weak var videoStream: UIImageView!
-    @IBAction func connect(sender: AnyObject) {
+    @IBAction func connect(_ sender: AnyObject) {
         
-        socket = WebSocket(url: NSURL(string: "ws://10.33.10.18:8000/websocket")!)
+        socket = WebSocket(url: URL(string: "ws://10.33.10.18:8000/websocket")!)
         socket.delegate = self
         socket.connect()
     }
     
     // MARK: Write Text Action
     
-    @IBAction func writeText(sender: UIButton) {
+    @IBAction func writeText(_ sender: UIButton) {
         socket.writeString("read_camera")
         print("preparing to send")
     }
     
     // MARK: Disconnect Action
     
-    @IBAction func disconnect(sender: UIBarButtonItem) {
+    @IBAction func disconnect(_ sender: UIBarButtonItem) {
         if connManager.socket.isConnected {
             sender.title = "Connect"
             connManager.socket.disconnect()
@@ -61,11 +61,11 @@ class ViewController: UIViewController{
 }
 // MARK: Websocket Delegate Methods.
 extension ViewController: WebSocketDelegate  {
-    func websocketDidConnect(ws: WebSocket) {
+    func websocketDidConnect(_ ws: WebSocket) {
         print("websocket is connected")
     }
     
-    func websocketDidDisconnect(ws: WebSocket, error: NSError?) {
+    func websocketDidDisconnect(_ ws: WebSocket, error: NSError?) {
         if let e = error {
             print("websocket is disconnected: \(e.localizedDescription)")
         } else {
@@ -73,14 +73,14 @@ extension ViewController: WebSocketDelegate  {
         }
     }
     
-    func websocketDidReceiveMessage(ws: WebSocket, text: String) {
+    func websocketDidReceiveMessage(_ ws: WebSocket, text: String) {
         
         
         let header = "data:image/jpeg;base64,\(text)"
         
-        let url = NSURL(string: header)
-        let imageData = NSData(contentsOfURL: url!)
-        let data  = NSData(base64EncodedString: header, options: NSDataBase64DecodingOptions.IgnoreUnknownCharacters  )
+        let url = URL(string: header)
+        let imageData = try? Data(contentsOf: url!)
+        let data  = Data(base64Encoded: header, options: NSData.Base64DecodingOptions.ignoreUnknownCharacters  )
         //print(data!)
         let ret = UIImage(data: imageData!)
         print(ret)
@@ -91,8 +91,9 @@ extension ViewController: WebSocketDelegate  {
         
     }
     
-    func websocketDidReceiveData(ws: WebSocket, data: NSData) {
-        print("Received data: \(data.length) : \(data.description)")
+    func websocketDidReceiveData(_ ws: WebSocket, data: Data) {
+        print("Received data: \(data.count) : \(data.description)")
     }
 
 }
+*/
