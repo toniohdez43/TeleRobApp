@@ -4,8 +4,7 @@
 target 'TeleRobApp' do
   # Comment this line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-  pod 'Starscream', '~> 2.0'
-  pod 'GVRSDK', '~> 1.0'
+  pod 'Starscream', '~> 1.1'
   
   # Pods for TeleRobApp
 

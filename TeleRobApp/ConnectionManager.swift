@@ -5,7 +5,7 @@
 //  Created by Antonio  Hernandez  on 9/6/16.
 //  Copyright © 2016 Antonio  Hernandez . All rights reserved.
 //
-/*
+
 import Foundation
 import Starscream
 
@@ -15,7 +15,7 @@ class ConnectionManager{
         
     {
         print("ws://\(ip):\(port)/websocket")
-        socket = WebSocket(url: URL(string: "ws://\(ip):\(port)/websocket")!)
+        socket = WebSocket(url: NSURL(string: "ws://\(ip):\(port)/websocket")!)
         socket.delegate = self
         socket.connect()
     }
@@ -24,11 +24,11 @@ class ConnectionManager{
 }
 // MARK: Websocket Delegate Methods.
 extension ConnectionManager: WebSocketDelegate  {
-    func websocketDidConnect(socket ws: WebSocket) {
+    func websocketDidConnect(ws: WebSocket) {
         print("websocket is connected")
     }
     
-    func websocketDidDisconnect(socket ws: WebSocket, error: NSError?) {
+    func websocketDidDisconnect(ws: WebSocket, error: NSError?) {
         if let e = error {
             print("websocket is disconnected: \(e.localizedDescription)")
         } else {
@@ -36,13 +36,12 @@ extension ConnectionManager: WebSocketDelegate  {
         }
     }
     
-    func websocketDidReceiveMessage(socket ws: WebSocket, text: String) {
+    func websocketDidReceiveMessage(ws: WebSocket, text: String) {
         print("Received text: \(text)")
     }
     
-    func websocketDidReceiveData(socket ws: WebSocket, data: Data) {
-        print("Received data: \(data.count)")
+    func websocketDidReceiveData(ws: WebSocket, data: NSData) {
+        print("Received data: \(data.length)")
     }
     
 }
- */

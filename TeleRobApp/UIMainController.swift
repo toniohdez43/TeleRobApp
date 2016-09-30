@@ -36,20 +36,20 @@ class UIMainController: UIViewController {
     
     
     //IBActions
-    @IBAction func selectCamera(_ sender: AnyObject) {
+    @IBAction func selectCamera(sender: AnyObject) {
         switch cameraControl.selectedSegmentIndex {
         case 0:
             print("CAMBIO")
             socket.disconnect()
-            socket = WebSocket(url: URL(string: "ws://10.33.8.140:8081/websocket")!)
+            socket = WebSocket(url: NSURL(string: "ws://10.33.10.18:8081/websocket")!)
             socket.delegate = self
             socket.connect()
             
             break
         case 1:
             print("CAMBIO")
-           socket.disconnect()
-            socket = WebSocket(url: URL(string: "ws://10.33.10.18:8081/websocket")!)
+            socket.disconnect()
+            socket = WebSocket(url: NSURL(string: "ws://10.33.8.140:8081/websocket")!)
             socket.delegate = self
             socket.connect()
             
@@ -59,13 +59,13 @@ class UIMainController: UIViewController {
         }
     }
     
-    @IBAction func reconnect(_ sender: AnyObject) {
-        //socket.writeString("read_camera")
+    @IBAction func reconnect(sender: AnyObject) {
+        socket.writeString("read_camera")
         print("preparing to send")
         
     }
     
-    @IBAction func connect(_ sender: AnyObject) {
+    @IBAction func connect(sender: AnyObject) {
         if let ip = ipField.text{
             if ip==""{
                 swiftPi = SwiftPi(username:"webiopi", password: "raspberry", ip:"10.33.10.18", port: "8000")
@@ -80,7 +80,7 @@ class UIMainController: UIViewController {
         }
     }
     
-    @IBAction func toggleLight(_ sender: AnyObject) {
+    @IBAction func toggleLight(sender: AnyObject) {
         
         switch sender as! NSObject {
         case frontLightButton:
@@ -108,7 +108,7 @@ class UIMainController: UIViewController {
     //Functions
     func getLightStatus(){
         //while(!check){
-       swiftPi = SwiftPi(username:"webiopi", password: "raspberry", ip:"10.33.10.18", port: "8000")
+       swiftPi = SwiftPi(username:"webiopi", password: "raspberry", ip:"10.33.8.140", port: "8000")
             checkLight(frontLightButton, gpio: .TWO)
         
             checkLight(backLightButton, gpio: .THREE)
@@ -122,7 +122,7 @@ class UIMainController: UIViewController {
     
         
     }
-    func checkLight(_ button:UIButton, gpio: SwiftPi.GPIO){
+    func checkLight(button:UIButton, gpio: SwiftPi.GPIO){
         
         swiftPi.setModeInBackground(gpio, mode: .OUT) { (result)-> Void in
             
@@ -134,14 +134,14 @@ class UIMainController: UIViewController {
                         
                     case "1":
                         
-                            button.backgroundColor = UIColor.green
+                            button.backgroundColor = UIColor.greenColor()
                             button.alpha = 0.3
                             
                         
                         
                     case "0":
                         
-                            button.backgroundColor = UIColor.gray
+                            button.backgroundColor = UIColor.grayColor()
                             button.alpha = 0.3
                             //
                             
@@ -158,7 +158,7 @@ class UIMainController: UIViewController {
     }
 
     
-    func checkAndToggle(_ button:UIButton, gpio: SwiftPi.GPIO){
+    func checkAndToggle(button:UIButton, gpio: SwiftPi.GPIO){
         
       swiftPi.setModeInBackground(gpio, mode: .OUT) { (result)-> Void in
         
@@ -170,14 +170,14 @@ class UIMainController: UIViewController {
                     
                 case "1":
                     self.swiftPi.setValueInBackground(gpio, value: .OFF){ (result)-> Void in
-                        button.backgroundColor = UIColor.gray
+                        button.backgroundColor = UIColor.grayColor()
                         button.alpha = 0.3
                         
                     }
                     
                 case "0":
                     self.swiftPi.setValueInBackground(gpio, value: .ON){ (result)-> Void in
-                        button.backgroundColor = UIColor.green
+                        button.backgroundColor = UIColor.greenColor()
                         button.alpha = 0.3
                         //
                         
@@ -209,49 +209,25 @@ class UIMainController: UIViewController {
         rightLightButton.layer.cornerRadius = 0.5 * frontLightButton.bounds.size.width
         leftLightButton.layer.cornerRadius = 0.5 * frontLightButton.bounds.size.width
         reconnectButton.layer.cornerRadius = 0.7 * frontLightButton.bounds.size.width
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIMainController.dismissKeyboard))
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
-        socket = WebSocket(url: URL(string: "ws://10.33.8.140:8081/websocket")!)
+        socket = WebSocket(url: NSURL(string: "ws://10.33.10.18:8081/websocket")!)
         socket.delegate = self
         socket.connect()
-        let timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(UIMainController.getLightStatus), userInfo: nil, repeats: true)
+        let timer = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: #selector(UIMainController.getLightStatus), userInfo: nil, repeats: true)
     }
-
-}
-// MARK: Google Cardboard delegate Delegate Methods.
-extension UIMainController:GVRCardboardViewDelegate{
-
-    func cardboardView(_ cardboardView: GVRCardboardView!, shouldPauseDrawing pause: Bool) {
-        //
-    }
-    func cardboardView(_ cardboardView: GVRCardboardView!, didFire event: GVRUserEvent) {
-        //
-    }
-    func cardboardView(_ cardboardView: GVRCardboardView!, prepareDrawFrame headTransform: GVRHeadTransform!) {
-        //
-    }
-    func cardboardView(_ cardboardView: GVRCardboardView!, willStartDrawing headTransform: GVRHeadTransform!) {
-        //
-    }
-    func cardboardView(_ cardboardView: GVRCardboardView!, draw eye: GVREye, with headTransform: GVRHeadTransform!) {
-        //
-    }
-    
-
 
 }
 // MARK: Websocket Delegate Methods.
-
 extension UIMainController:WebSocketDelegate  {
-    func websocketDidConnect(socket: WebSocket) {
+    func websocketDidConnect(ws: WebSocket) {
         print("websocket is connected")
-        
-        socket.write(string: "read_camera")
+        socket.writeString("read_camera")
         print("preparing to send")
     }
     
-    func websocketDidDisconnect(socket : WebSocket, error: NSError?) {
+    func websocketDidDisconnect(ws: WebSocket, error: NSError?) {
         if let e = error {
             print("websocket is disconnected: \(e.localizedDescription)")
         } else {
@@ -259,14 +235,14 @@ extension UIMainController:WebSocketDelegate  {
         }
     }
     
-    func websocketDidReceiveMessage(socket : WebSocket, text: String) {
+    func websocketDidReceiveMessage(ws: WebSocket, text: String) {
         
         
         let header = "data:image/jpeg;base64,\(text)"
         
-        let url = URL(string: header)
-        let imageData = try? Data(contentsOf: url!)
-        let data  = Data(base64Encoded: header, options: NSData.Base64DecodingOptions.ignoreUnknownCharacters  )
+        let url = NSURL(string: header)
+        let imageData = NSData(contentsOfURL: url!)
+        let data  = NSData(base64EncodedString: header, options: NSDataBase64DecodingOptions.IgnoreUnknownCharacters  )
         //print(data!)
         let ret = UIImage(data: imageData!)
         
@@ -278,9 +254,8 @@ extension UIMainController:WebSocketDelegate  {
         
     }
     
-    func websocketDidReceiveData(socket ws: WebSocket, data: Data) {
-        print("Received data: \(data.count) : \(data.description)")
+    func websocketDidReceiveData(ws: WebSocket, data: NSData) {
+        print("Received data: \(data.length) : \(data.description)")
     }
- 
     
 }
