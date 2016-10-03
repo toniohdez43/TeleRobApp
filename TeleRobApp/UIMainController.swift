@@ -9,6 +9,9 @@
 import UIKit
 import SwiftPi
 import Starscream
+import CoreMotion
+
+
 
 class UIMainController: UIViewController {
     // Initial objects
@@ -16,8 +19,14 @@ class UIMainController: UIViewController {
     var check = false
     var socket: WebSocket!
     var swiftPi : SwiftPi!
+    var motionManager = CMMotionManager()
+    var xIsValid = false
+    var yIsValid = false
+    //Camera
+    
     // IBOutlets:
     
+    @IBOutlet weak var imageVRview: GVRPanoramaView!
     @IBOutlet weak var cameraControl: UISegmentedControl!
     
     @IBOutlet weak var videoStream: UIImageView!
@@ -41,7 +50,7 @@ class UIMainController: UIViewController {
         case 0:
             print("CAMBIO")
             socket.disconnect()
-            socket = WebSocket(url: NSURL(string: "ws://10.33.10.18:8081/websocket")!)
+            socket = WebSocket(url: NSURL(string: "ws://192.168.42.16:8000/websocket")!)
             socket.delegate = self
             socket.connect()
             
@@ -68,13 +77,13 @@ class UIMainController: UIViewController {
     @IBAction func connect(sender: AnyObject) {
         if let ip = ipField.text{
             if ip==""{
-                swiftPi = SwiftPi(username:"webiopi", password: "raspberry", ip:"10.33.10.18", port: "8000")
+               swiftPi = SwiftPi(username:"webiopi", password: "raspberry", ip:"10.33.10.18", port: "8000")
                 
 
             
             }
             else{
-                swiftPi = SwiftPi(username:"webiopi", password: "raspberry", ip:ip, port: "8000")
+               swiftPi = SwiftPi(username:"webiopi", password: "raspberry", ip:ip, port: "8000")
             }
            getLightStatus()
         }
@@ -104,6 +113,34 @@ class UIMainController: UIViewController {
         }
         
     }
+    //Request functions
+    func httpRequest (valueX: String, valueY: String) -> NSURLRequest
+    {
+        
+        
+        let urlStr = "http://10.33.28.197:8888/cameraPos?X=\(valueX)&Y=\(valueY)"
+        let url = NSURL(string: urlStr)
+        let request = NSMutableURLRequest(URL: url!)
+        request.HTTPMethod = "GET"
+        //request.setValue("Basic \(loginString(username, password: password))", forHTTPHeaderField: "Authorization")
+        return request
+
+
+    }
+    func fireRequest(request:NSURLRequest) -> String {
+        var responseString:NSString! = "Error"
+        // fire off the request
+        var response: NSURLResponse?
+        do {
+            let data = try NSURLConnection.sendSynchronousRequest(request, returningResponse: &response)
+            responseString = NSString(data: data, encoding: NSUTF8StringEncoding)
+            print("responseString = \(responseString!)")
+            return responseString as String
+        } catch (let e) {
+            print(e)
+            return responseString as String
+        }
+    }
     
     //Functions
     func getLightStatus(){
@@ -125,7 +162,7 @@ class UIMainController: UIViewController {
     func checkLight(button:UIButton, gpio: SwiftPi.GPIO){
         
         swiftPi.setModeInBackground(gpio, mode: .OUT) { (result)-> Void in
-            
+      
             self.swiftPi.getValueInBackground(gpio){ (result) -> Void in
                 if let res = result {
                     //print(res)
@@ -194,16 +231,64 @@ class UIMainController: UIViewController {
         //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)
     }
+    func transformAngle(angle: Double)-> Double{
+        return (abs(((angle + 40)%360) - 80) / 5) + 5;
+        //return (Mathf.Abs(((grado + 40) % 360) - 80) / 5) + 5;
+        
+        
+        
+    }
     
 
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        motionManager.accelerometerUpdateInterval = 0.1
+        motionManager.gyroUpdateInterval = 0.1
+        motionManager.startGyroUpdatesToQueue(NSOperationQueue.currentQueue()!, withHandler: {(accelerometerData: CMGyroData?, error: NSError?) -> Void in
+            var x = 0.0
+            var y = 0.0
+            if (self.imageVRview.headRotation.pitch >= -90 && self.imageVRview.headRotation.pitch <= 90){
+                x = self.transformAngle(Double(self.imageVRview.headRotation.pitch))
+                y = self.transformAngle(Double(self.imageVRview.headRotation.yaw))
+            }
+            
+            if (x<=21 && x>=5)
+            {
+                self.xIsValid =  true
+                print("Around x: \(x)")
+                
+            }
+            else{
+                self.xIsValid = false
+                
+            }
+            if (y<=21 && y>=5)
+            {
+                self.yIsValid =  true
+                print("Around y: \(y)")
+            }
+            else{
+                self.yIsValid = false
+            }
+            if (self.xIsValid && self.yIsValid){
+                self.fireRequest(self.httpRequest("\(y)", valueY: "\(x)"))
+            }
+            
+            if(error != nil){
+                print("\(error)")
+            }
+            
+            
+
+            
         
+        
+        })
         let image = UIImage(named: "ironman")
         videoStream.image = image
-        
+        imageVRview.loadImage(image, ofType: .Mono)
         frontLightButton.layer.cornerRadius = 0.5 * frontLightButton.bounds.size.width
         backLightButton.layer.cornerRadius = 0.5 * frontLightButton.bounds.size.width
         rightLightButton.layer.cornerRadius = 0.5 * frontLightButton.bounds.size.width
@@ -212,10 +297,12 @@ class UIMainController: UIViewController {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
-        socket = WebSocket(url: NSURL(string: "ws://10.33.10.18:8081/websocket")!)
+        socket = WebSocket(url: NSURL(string: "ws://192.168.42.16:8000/websocket")!)
         socket.delegate = self
         socket.connect()
         let timer = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: #selector(UIMainController.getLightStatus), userInfo: nil, repeats: true)
+        imageVRview.enableCardboardButton = true
+        imageVRview.enableFullscreenButton = true
     }
 
 }
@@ -248,7 +335,7 @@ extension UIMainController:WebSocketDelegate  {
         
         
         videoStream.image = ret
-        
+        imageVRview.loadImage(ret, ofType: .Mono)
         //print("Received text: \(text)")
         
         
@@ -259,3 +346,28 @@ extension UIMainController:WebSocketDelegate  {
     }
     
 }
+// MARK: Google Cardboard delegate Delegate Methods.
+extension UIMainController:GVRCardboardViewDelegate{
+    
+    
+    func cardboardView(cardboardView: GVRCardboardView!, didFireEvent event: GVRUserEvent) {
+        //
+    }
+    func cardboardView(cardboardView: GVRCardboardView!, drawEye eye: GVREye, withHeadTransform headTransform: GVRHeadTransform!) {
+        //
+    }
+    
+    
+    
+    func cardboardView(cardboardView: GVRCardboardView!, shouldPauseDrawing pause: Bool) {
+        //
+    }
+
+    func cardboardView(cardboardView: GVRCardboardView!, prepareDrawFrame headTransform: GVRHeadTransform!) {
+        //
+    }
+    func cardboardView(cardboardView: GVRCardboardView!, willStartDrawing headTransform: GVRHeadTransform!) {
+        //
+    }
+}
+

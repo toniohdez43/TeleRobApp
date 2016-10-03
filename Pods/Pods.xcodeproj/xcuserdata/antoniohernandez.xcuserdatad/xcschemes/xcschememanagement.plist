@@ -24,20 +24,30 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftPi.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>25F48D0CA5C6F712CA8CE97D48BC1B42</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>37AA8CB9201D1D5CAC1EB9FF8EA25E6D</key>
+		<key>595413F18D41E2161FB0ED9E6E549772</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>84870E8B3EEBCDA4345875C648F1AE47</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A22229F97B123E6107C8E1D74636E20F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D470776D98152A36BC9BF63E9037C1F2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

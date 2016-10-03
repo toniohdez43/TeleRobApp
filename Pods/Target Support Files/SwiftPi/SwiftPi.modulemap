@@ -1,0 +1,6 @@
+framework module SwiftPi {
+  umbrella header "SwiftPi-umbrella.h"
+
+  export *
+  module * { export * }
+}

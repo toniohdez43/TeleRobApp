@@ -10,8 +10,6 @@
 		0962A051DBB80F86A698EA26 /* Pods_TeleRobApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74CA301FC18671405A3833E /* Pods_TeleRobApp.framework */; };
 		141EB6609B395B819719210C /* Pods_TeleRobAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C8CED54381D2B06EAAB7D0 /* Pods_TeleRobAppUITests.framework */; };
 		66DB72CFC775EB3DDEA396E4 /* Pods_TeleRobAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49DC9BC95A2BB5C4A566DE1F /* Pods_TeleRobAppTests.framework */; };
-		9C46EE501D807E1200CB546C /* SwiftPi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C46EE4A1D807DE100CB546C /* SwiftPi.framework */; };
-		9C46EE511D807E1200CB546C /* SwiftPi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C46EE4A1D807DE100CB546C /* SwiftPi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9C496C681D7F23DA00C7DA59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C496C671D7F23DA00C7DA59 /* AppDelegate.swift */; };
 		9C496C6A1D7F23DA00C7DA59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C496C691D7F23DA00C7DA59 /* ViewController.swift */; };
 		9C496C6D1D7F23DA00C7DA59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C496C6B1D7F23DA00C7DA59 /* Main.storyboard */; };
@@ -24,27 +22,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9C46EE491D807DE100CB546C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9C46EE441D807DE100CB546C /* SwiftPi.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9CFF3DDA1D6CD052005753FF;
-			remoteInfo = SwiftPi;
-		};
-		9C46EE4B1D807DE100CB546C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9C46EE441D807DE100CB546C /* SwiftPi.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9CFF3DE41D6CD052005753FF;
-			remoteInfo = SwiftPiTests;
-		};
-		9C46EE521D807E1200CB546C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9C46EE441D807DE100CB546C /* SwiftPi.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 9CFF3DD91D6CD052005753FF;
-			remoteInfo = SwiftPi;
-		};
 		9C496C791D7F23DA00C7DA59 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9C496C5C1D7F23D900C7DA59 /* Project object */;
@@ -68,7 +45,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9C46EE511D807E1200CB546C /* SwiftPi.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,7 +57,7 @@
 		49DC9BC95A2BB5C4A566DE1F /* Pods_TeleRobAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeleRobAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61452752762E630C9A834F26 /* Pods-TeleRobApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeleRobApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeleRobApp/Pods-TeleRobApp.debug.xcconfig"; sourceTree = "<group>"; };
 		7F8B0C54D54E555420795041 /* Pods-TeleRobAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeleRobAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeleRobAppTests/Pods-TeleRobAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		9C46EE441D807DE100CB546C /* SwiftPi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftPi.xcodeproj; path = /Users/antoniohernandez/Documents/Apps/SwiftPi/Example/../SwiftPi.xcodeproj; sourceTree = "<absolute>"; };
+		9C069B061D9EF90C00209DDA /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		9C496C641D7F23D900C7DA59 /* TeleRobApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeleRobApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C496C671D7F23DA00C7DA59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C496C691D7F23DA00C7DA59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,7 +85,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0962A051DBB80F86A698EA26 /* Pods_TeleRobApp.framework in Frameworks */,
-				9C46EE501D807E1200CB546C /* SwiftPi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,19 +130,9 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		9C46EE451D807DE100CB546C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9C46EE4A1D807DE100CB546C /* SwiftPi.framework */,
-				9C46EE4C1D807DE100CB546C /* SwiftPiTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		9C496C5B1D7F23D900C7DA59 = {
 			isa = PBXGroup;
 			children = (
-				9C46EE441D807DE100CB546C /* SwiftPi.xcodeproj */,
 				9C496C661D7F23DA00C7DA59 /* TeleRobApp */,
 				9C496C7B1D7F23DA00C7DA59 /* TeleRobAppTests */,
 				9C496C861D7F23DA00C7DA59 /* TeleRobAppUITests */,
@@ -190,6 +155,7 @@
 		9C496C661D7F23DA00C7DA59 /* TeleRobApp */ = {
 			isa = PBXGroup;
 			children = (
+				9C069B061D9EF90C00209DDA /* Bridging-Header.h */,
 				9C496C9B1D7F2C6400C7DA59 /* Assets */,
 				9C496C981D7F261700C7DA59 /* Components */,
 				9C496C971D7F260600C7DA59 /* Utils */,
@@ -278,7 +244,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				9C46EE531D807E1200CB546C /* PBXTargetDependency */,
 			);
 			name = TeleRobApp;
 			productName = TeleRobApp;
@@ -361,12 +326,6 @@
 			mainGroup = 9C496C5B1D7F23D900C7DA59;
 			productRefGroup = 9C496C651D7F23D900C7DA59 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 9C46EE451D807DE100CB546C /* Products */;
-					ProjectRef = 9C46EE441D807DE100CB546C /* SwiftPi.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				9C496C631D7F23D900C7DA59 /* TeleRobApp */,
@@ -375,23 +334,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		9C46EE4A1D807DE100CB546C /* SwiftPi.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SwiftPi.framework;
-			remoteRef = 9C46EE491D807DE100CB546C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9C46EE4C1D807DE100CB546C /* SwiftPiTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = SwiftPiTests.xctest;
-			remoteRef = 9C46EE4B1D807DE100CB546C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9C496C621D7F23D900C7DA59 /* Resources */ = {
@@ -574,11 +516,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9C46EE531D807E1200CB546C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftPi;
-			targetProxy = 9C46EE521D807E1200CB546C /* PBXContainerItemProxy */;
-		};
 		9C496C7A1D7F23DA00C7DA59 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9C496C631D7F23D900C7DA59 /* TeleRobApp */;
@@ -704,11 +641,14 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TeleRobApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tonio43.TeleRobApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -720,11 +660,14 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TeleRobApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tonio43.TeleRobApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/Bridging-Header.h";
 			};
 			name = Release;
 		};

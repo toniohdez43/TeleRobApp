@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4E2-5F-h6H">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4E2-5F-h6H">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -125,10 +125,15 @@
                                     <action selector="connect:" destination="4E2-5F-h6H" eventType="touchUpInside" id="XWR-Fx-ymO"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sio-aa-QVh" customClass="GVRPanoramaView">
+                                <rect key="frame" x="392" y="320" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Pw4-Jm-QPS" firstAttribute="top" secondItem="fe1-7s-Y31" secondAttribute="bottom" constant="21" id="1B7-mV-H6O"/>
+                            <constraint firstItem="Sio-aa-QVh" firstAttribute="centerX" secondItem="EJi-Cm-dTK" secondAttribute="centerX" id="4iu-EI-bfQ"/>
                             <constraint firstItem="aDQ-Uc-9Z1" firstAttribute="centerX" secondItem="EJi-Cm-dTK" secondAttribute="centerX" id="DpZ-c2-Z1u"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fe1-7s-Y31" secondAttribute="trailing" id="HGf-Hx-b3m"/>
                             <constraint firstItem="9EA-wW-9aL" firstAttribute="top" secondItem="Pw4-Jm-QPS" secondAttribute="bottom" constant="41" id="I55-9b-vmh"/>
@@ -138,6 +143,7 @@
                             <constraint firstItem="aDQ-Uc-9Z1" firstAttribute="top" secondItem="kyH-7Q-YsH" secondAttribute="bottom" id="mEQ-FG-60k"/>
                             <constraint firstItem="2GQ-rq-0Tx" firstAttribute="width" secondItem="EJi-Cm-dTK" secondAttribute="width" id="pp4-RU-PmM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Pw4-Jm-QPS" secondAttribute="trailing" id="pzN-iN-dRC"/>
+                            <constraint firstItem="Sio-aa-QVh" firstAttribute="centerY" secondItem="EJi-Cm-dTK" secondAttribute="centerY" id="qke-DQ-ahX"/>
                             <constraint firstItem="7NR-qA-lZy" firstAttribute="centerX" secondItem="EJi-Cm-dTK" secondAttribute="centerX" id="ssW-HH-Pnh"/>
                             <constraint firstItem="2GQ-rq-0Tx" firstAttribute="height" secondItem="EJi-Cm-dTK" secondAttribute="height" id="tAr-QG-gZY"/>
                             <constraint firstItem="7NR-qA-lZy" firstAttribute="top" secondItem="aDQ-Uc-9Z1" secondAttribute="bottom" constant="8" id="w3B-9t-wfH"/>
@@ -150,6 +156,7 @@
                         <outlet property="backLightButton" destination="VV1-wz-hbN" id="kqv-up-9nV"/>
                         <outlet property="cameraControl" destination="Pw4-Jm-QPS" id="Cke-TU-Vwj"/>
                         <outlet property="frontLightButton" destination="rkr-48-xjV" id="mFI-cO-2jT"/>
+                        <outlet property="imageVRview" destination="Sio-aa-QVh" id="BHv-yt-Ldg"/>
                         <outlet property="ipField" destination="aDQ-Uc-9Z1" id="mog-Ru-FsP"/>
                         <outlet property="leftLightButton" destination="XAM-md-JC1" id="nX9-e4-Xga"/>
                         <outlet property="reconnectButton" destination="fe1-7s-Y31" id="M4o-KV-mFq"/>

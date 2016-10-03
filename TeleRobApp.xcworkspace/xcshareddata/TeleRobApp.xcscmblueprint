@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "643620A122989973BE0B91E0ED4F3961ABDF8665",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7C8EF697852A7696419EB6A90CF473419BB2CFE3" : 0,
+    "643620A122989973BE0B91E0ED4F3961ABDF8665" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "36BCC3BB-F742-4AA8-8BD1-AC2CC370512E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7C8EF697852A7696419EB6A90CF473419BB2CFE3" : "SwiftPi\/",
+    "643620A122989973BE0B91E0ED4F3961ABDF8665" : "TeleRobApp\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TeleRobApp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TeleRobApp.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/toniohdez43\/TeleRobApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "643620A122989973BE0B91E0ED4F3961ABDF8665"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/sbaidon\/SwiftPi.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7C8EF697852A7696419EB6A90CF473419BB2CFE3"
+    }
+  ]
+}
