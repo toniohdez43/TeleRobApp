@@ -18,6 +18,7 @@
 		9C496C7D1D7F23DA00C7DA59 /* TeleRobAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C496C7C1D7F23DA00C7DA59 /* TeleRobAppTests.swift */; };
 		9C496C881D7F23DA00C7DA59 /* TeleRobAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C496C871D7F23DA00C7DA59 /* TeleRobAppUITests.swift */; };
 		9C496C9A1D7F265700C7DA59 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C496C991D7F265700C7DA59 /* ConnectionManager.swift */; };
+		9C5D01851DB58E5000286D45 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5D01841DB58E5000286D45 /* CameraController.swift */; };
 		9CF7EF5F1D8070D8001610E4 /* UIMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF7EF5E1D8070D8001610E4 /* UIMainController.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		9C496C871D7F23DA00C7DA59 /* TeleRobAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeleRobAppUITests.swift; sourceTree = "<group>"; };
 		9C496C891D7F23DA00C7DA59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C496C991D7F265700C7DA59 /* ConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		9C5D01841DB58E5000286D45 /* CameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 		9CF7EF5E1D8070D8001610E4 /* UIMainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIMainController.swift; sourceTree = "<group>"; };
 		A74CA301FC18671405A3833E /* Pods_TeleRobApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeleRobApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8C8CED54381D2B06EAAB7D0 /* Pods_TeleRobAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeleRobAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -188,6 +190,7 @@
 			children = (
 				9C496C691D7F23DA00C7DA59 /* ViewController.swift */,
 				9CF7EF5E1D8070D8001610E4 /* UIMainController.swift */,
+				9C5D01841DB58E5000286D45 /* CameraController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -490,6 +493,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C5D01851DB58E5000286D45 /* CameraController.swift in Sources */,
 				9CF7EF5F1D8070D8001610E4 /* UIMainController.swift in Sources */,
 				9C496C6A1D7F23DA00C7DA59 /* ViewController.swift in Sources */,
 				9C496C9A1D7F265700C7DA59 /* ConnectionManager.swift in Sources */,

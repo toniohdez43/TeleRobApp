@@ -10,7 +10,7 @@ import UIKit
 import SwiftPi
 import Starscream
 import CoreMotion
-
+ 
 
 
 class UIMainController: UIViewController {
@@ -58,7 +58,7 @@ class UIMainController: UIViewController {
         case 1:
             print("CAMBIO")
             socket.disconnect()
-            socket = WebSocket(url: NSURL(string: "ws://10.33.8.140:8081/websocket")!)
+            socket = WebSocket(url: NSURL(string: "ws://10.33.10.18:8000/websocket")!)
             socket.delegate = self
             socket.connect()
             
@@ -118,7 +118,7 @@ class UIMainController: UIViewController {
     {
         
         
-        let urlStr = "http://10.33.28.197:8888/cameraPos?X=\(valueX)&Y=\(valueY)"
+        let urlStr = "http://10.33.10.18:8888/cameraPos?X=\(valueX)&Y=\(valueY)"
         let url = NSURL(string: urlStr)
         let request = NSMutableURLRequest(URL: url!)
         request.HTTPMethod = "GET"
@@ -238,6 +238,13 @@ class UIMainController: UIViewController {
         
         
     }
+    func transformMirrorAngle(angle: Double)->Double{
+        return 21-(21%(angle+16))
+    }
+    func transformAngleServo(angle: Double)->Double{
+        return ((14/5)*(angle+40)+638)/100
+    }
+    
     
 
     
@@ -249,11 +256,19 @@ class UIMainController: UIViewController {
         motionManager.startGyroUpdatesToQueue(NSOperationQueue.currentQueue()!, withHandler: {(accelerometerData: CMGyroData?, error: NSError?) -> Void in
             var x = 0.0
             var y = 0.0
-            if (self.imageVRview.headRotation.pitch >= -90 && self.imageVRview.headRotation.pitch <= 90){
-                x = self.transformAngle(Double(self.imageVRview.headRotation.pitch))
-                y = self.transformAngle(Double(self.imageVRview.headRotation.yaw))
+            if (self.imageVRview.headRotation.pitch >= -40 && self.imageVRview.headRotation.pitch <= 40 && self.imageVRview.headRotation.yaw >= -40 && self.imageVRview.headRotation.yaw <= 40){
+                x = self.transformAngleServo(Double(self.imageVRview.headRotation.pitch))
+                //print(self.imageVRview.headRotation.pitch)
+                y = self.transformAngleServo(Double(self.imageVRview.headRotation.yaw))
+                //x = Double(self.imageVRview.headRotation.pitch) + 90.0
+                //y = Double(self.imageVRview.headRotation.yaw) + 90.0
+                //y = self.transformMirrorAngle(y)
+                //print(self.imageVRview.headRotation.yaw)
+                print("Around x: \(x)")
+                print("Around y: \(y)")
+                 self.fireRequest(self.httpRequest("\(y)", valueY: "\(x)"))
             }
-            
+           /*
             if (x<=21 && x>=5)
             {
                 self.xIsValid =  true
@@ -273,13 +288,13 @@ class UIMainController: UIViewController {
                 self.yIsValid = false
             }
             if (self.xIsValid && self.yIsValid){
-                self.fireRequest(self.httpRequest("\(y)", valueY: "\(x)"))
+               
             }
             
             if(error != nil){
                 print("\(error)")
             }
-            
+            */
             
 
             
@@ -295,6 +310,7 @@ class UIMainController: UIViewController {
         leftLightButton.layer.cornerRadius = 0.5 * frontLightButton.bounds.size.width
         reconnectButton.layer.cornerRadius = 0.7 * frontLightButton.bounds.size.width
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
+        
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
         socket = WebSocket(url: NSURL(string: "ws://192.168.42.16:8000/websocket")!)
@@ -335,6 +351,9 @@ extension UIMainController:WebSocketDelegate  {
         
         
         videoStream.image = ret
+        //imageVRview.addSubview(videoStream)
+        imageVRview.loadImage(nil)
+        
         imageVRview.loadImage(ret, ofType: .Mono)
         //print("Received text: \(text)")
         
